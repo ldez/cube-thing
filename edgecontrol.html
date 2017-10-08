@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Edge control (VH)</title>
+  <meta property="og:title" content="Edge control (VH)">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="ldez magic puzzle (rubik's)">
+  <meta property="og:description" content="Rubik's cube, algo Edge Control (VH)">
+  <meta name="description" content="Edge control (VH)">
+<style>
+* {box-sizing: border-box;}
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.wrapper > div {
+  border: 2px solid rgb(233,171,88);
+  border-radius: 5px;
+  padding: 1em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+</style>
+</head>
+<body>
+
+<h1>Edge Control (VH)</h1>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Biu7V9BB1yo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>1er cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>[U ] R U'R'</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=URU%27R%27&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>[U'] L'U L</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=U%27L%27UL&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>2e cas: <span>sledge hammer</span></h2>
+<div class="wrapper">
+  <div>
+    <pre>R'F R F'</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=R%27FRF%27&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>L F'L'F</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=LF%27L%27F&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>3e cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>[U ] F'L'U'L F</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=UF%27L%27U%27LF&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>[U'] F R U R'F'</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=U%27FRUR%27F%27&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>4e cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>L'r'U L U'r</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=L%27r%27ULU%27r&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>R l U'R'U l'</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=RlU%27R%27Ul%27&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>5e cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>[U ] R U'y R U R'U'F'</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=URU%27yRUR%27U%27F%27&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>[U'] L'U y'L'U'L U F</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=U%27L%27Uy%27L%27U%27LUF&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>6e cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>[U ] R U R'U2 (R'F R F')</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=URUR%27U2(R%27F%20R%20F%27)&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>[U'] L'U'L U2 (L F'L'F)</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=U%27L%27U%27LU2(LF%27L%27F)&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>7e cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>[U2] (R'F R F') U2 (R'F R F')</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=U2(R%27FRF%27)U2(R%27FRF%27)&stage=vh" alt="R" >
+  </div>
+  <div>
+    <pre>[U2] (L F'L'F ) U2 (L F'L'F )</pre>
+    <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&case=U2(LF%27L%27F)U2(LF%27L%27F)&stage=vh" alt="L" >
+   </div>
+</div>
+
+<h2>8e cas:</h2>
+<div class="wrapper">
+  <div>
+    <pre>???</pre>
+    <img src="" alt="R" >
+  </div>
+  <div>
+    <pre>???</pre>
+    <img src="" alt="L" >
+   </div>
+</div>
+<div>
+<div>
+<h2>Plus d'informations:</h2>
+<ul>
+<li><a href="https://www.francocube.com/deadalnix/vh">La méthode Vandenbergh-Harris</a></li>
+<li><a href="https://www.speedsolving.com/wiki/index.php/VHLS">VHLS</a></li>
+<li><a href="https://www.scribd.com/doc/62531775/VHF2L-algorithms">VHF2L-algorithms</a></li>
+</ul>
+</div>
+</body>
+</html>
+
