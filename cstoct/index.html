@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSTimer to Cubing Time</title>
+  <meta property="og:title" content="CSTimer to Cubing Time">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="ldez magic puzzle (rubik's)">
+  <meta property="og:description" content="CSTimer to Cubing Time converter">
+  <meta name="description" content="CSTimer to Cubing Time converter">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <main class="wrap">
+    <form>
+      <fieldset>
+        <legend>CSTimer to Cubing Time Converter</legend>
+        <div>
+          <label for="csTimer">File to convert:</label>
+          <input type="file" id="csTimerFile" name="csTimer" />
+          <div id="filedrag" class="filedrag">or drop a file here</div>
+        </div>
+      </fieldset>
+      <input name="limit" type="number" id="limit" value="99999" style="display:none;">
+    </form>
+
+    <div id="ct-data" class="ct-data"></div>
+
+    <hr>
+    <section>
+      <h2>How to use the converter?</h1>
+        <ul>
+          <li>Export time to a file from <a href="https://cstimer.net">CSTimer</a></li>
+          <li>Open this file in the converter</li>
+          <li>The file is immediately converted</li>
+          <li>Select a session content (<kbd>ctrl+a</kbd>)</li>
+          <li>Copy the content into the clipboard (<kbd>ctrl+c</kbd>)</li>
+          <li>
+            In the <a href="https://cubingtime.com/timer">Cubing Time timer</a>
+            <ul>
+              <li>Click on "Settings"</li>
+              <li>Click on "Import solves"</li>
+              <li>Click on "By text"</li>
+              <li>Paste (<kbd>ctrl+v</kbd>) the session content</li>
+              <li>Click on "OK"</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
