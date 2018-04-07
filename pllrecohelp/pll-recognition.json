@@ -1,0 +1,529 @@
+[
+  {
+    "name": "Ua",
+    "algo": "M'2 U M U2 M' U M'2",
+    "category": "Permutations of Edges Only",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "la permutation des arrêtes F et R forme une seule et unique ligne face R",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": [
+        "la permutation des arrêtes F et R forme une seule et unique ligne face R",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "ligne déjà formée en face F (gauche)",
+        "les coins de la face R (droite) ont la même couleur",
+        "l'arrête (R) a une couleur adjacente à celle des coins"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "ligne déjà formée en face R (droite)",
+        "les coins de la face F (gauche) ont la même couleur",
+        "l'arrête (F) a une couleur opposée à celle des coins"
+      ]
+    }]
+  },
+  {
+    "name": "Ub",
+    "category": "Permutations of Edges Only",
+    "algo": "M'2 U' M U2 M' U' M'2",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "la permutation des arrêtes F et R forme une seule et unique ligne face F",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": [
+        "la permutation des arrêtes F et R forme une seule et unique ligne face F",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "ligne déjà formée en face F (gauche)",
+        "les coins de la face R (droite) ont la même couleur",
+        "l'arrête (R) a une couleur opposée à celle des coins"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "ligne déjà formée en face R (droite)",
+        "les coins de la face F (gauche) ont la même couleur",
+        "l'arrête (F) a une couleur adjacente à celle des coins"
+      ]
+    }]
+  },
+  {
+    "name": "Z",
+    "category": "Permutations of Edges Only",
+    "algo": "M' U (M'2 U) (M'2 U) M' U2 M'2 U'",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "la permutation des arrêtes F et R ne forme aucune ligne",
+        "les arrêtes ont des couleurs adjacentes aux coins de la même ligne",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": [
+        "la permutation des arrêtes F et R forme les 2 lignes",
+        "les coins (R) ont la même couleur",
+        "les coins (F) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "la permutation des arrêtes F et R ne forme aucune ligne",
+        "les arrêtes ont des couleurs adjacentes aux coins de la même ligne",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "la permutation des arrêtes F et R forme les 2 lignes",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur"
+      ]
+    }]
+  },
+  {
+    "name": "H",
+    "category": "Permutations of Edges Only",
+    "algo": "M'2 U M'2 U2 M'2 U M'2",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "les arrêtes ont des couleurs opposée aux coins de la même ligne",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur",
+        "la permutation des arrêtes F et R ne forme aucune ligne"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": [
+        "les arrêtes ont des couleurs opposée aux coins de la même ligne",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur",
+        "la permutation des arrêtes F et R ne forme aucune ligne"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "les arrêtes ont des couleurs opposée aux coins de la même ligne",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur",
+        "la permutation des arrêtes F et R ne forme aucune ligne"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "les arrêtes ont des couleurs opposée aux coins de la même ligne",
+        "les coins (F) ont la même couleur",
+        "les coins (R) ont la même couleur",
+        "la permutation des arrêtes F et R ne forme aucune ligne"
+      ]
+    }]
+  },
+
+  {
+    "name": "Aa",
+    "category": "Permutations of Corners Only",
+    "algo": "x (R' U R') D2 (R U' R') D2 R2 x'",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": [
+        "un bloc 2x2 formé",
+        "les coins des 2 extermités (F & R) ont la même couleur",
+        "couleurs opposées sur la droite",
+        "couleurs adjacentes sur la gauche"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Ab",
+    "category": "Permutations of Corners Only",
+    "algo": "x R2' D2 (R U R') D2 (R U' R) x'",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": [
+        "un bloc 2x2 formé",
+        "les coins des 2 extermités (F & R) ont la même couleur",
+        "couleurs opposées sur la gauche",
+        "couleurs adjacentes sur la droite"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "E",
+    "category": "Permutations of Corners Only",
+    "algo": "x' (R U' R' D) (R U R' D') (R U R' D) (R U' R' D') x",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "aucune paire",
+        "le coin central face F a la même couleur que l'arrête (R)",
+        "l'arrête (F) a une couleur opposée à celle du coin central face R"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": [
+        "aucune paire",
+        "le coin central face R a la même couleur que l'arrête (F)",
+        "l'arrête (R) a une couleur opposée à celle du coin central face F"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "aucune paire",
+        "le coin central face F a la même couleur que l'arrête (R)",
+        "l'arrête (F) a une couleur opposée à celle du coin central face R"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "aucune paire",
+        "le coin central (F+R) a la même couleur que l'arrête (F)",
+        "l'arrête (R) a une couleur opposée à celle du coin central face F"
+      ]
+    }]
+  },
+
+  {
+    "name": "Ra",
+    "category": "Swap One Set of Adjacent Corners",
+    "algo": "(R U' R' U') (R U R D) (R' U' R D') (R' U2 R') [U']",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "après la permutation des 2 arrêtes, ligne formée face R",
+        "après la permutation des 2 arrêtes, la couleur les arrêtes est identique au coin central",
+        "les coins face R ont la même couleur",
+        "les coins face F n'ont pas la même couleur"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "les coins aux extremités (F & R) ont la même couleur",
+        "le coin central face F a une couleur adjacente à celle de l'arrête de la face R",
+        "le coin central face R a la même que la couleur de l'arrête de la face F"
+      ]
+    }]
+  },
+  {
+    "name": "Rb",
+    "category": "Swap One Set of Adjacent Corners",
+    "algo": "(R' U2 R U2') R' F (R U R' U') R' F' R2 [U']",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "après la permutation des 2 arrêtes, ligne formée face F",
+        "après la permutation des 2 arrêtes, la couleur les arrêtes est identique au coin central",
+        "les coins face F ont la même couleur",
+        "les coins face R n'ont pas la même couleur"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "les coins aux extremités (F & R) ont la même couleur",
+        "le coin central face R a une couleur adjacente à celle de l'arrête de la face F",
+        "le coin central face F a la même que la couleur de l'arrête de la face R"
+      ]
+    }]
+  },
+  {
+    "name": "Ja",
+    "category": "Swap One Set of Adjacent Corners",
+    "algo": "(R' U L' U2) (R U' R' U2 R) L [U']",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Jb",
+    "category": "Swap One Set of Adjacent Corners",
+    "algo": "(R U R' F') (R U R' U') R' F R2 U' R' [U']",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "T",
+    "category": "Swap One Set of Adjacent Corners",
+    "algo": "(R U R' U') (R' F R2 U') R' U' (R U R' F')",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "une paire formée (F)",
+        "face R: les coins ont une couleur opposée",
+        "le coin central face F a une couleur opposée à l'arrête de la face R"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": [
+        "une paire formée (F)",
+        "face R: les coins ont la même couleur",
+        "face R: l'arrête à une couleur opposée aux coins"
+      ]
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "une paire formée (R)",
+        "face F: les coins ont la même couleur",
+        "face F: l'arrête à une couleur opposée aux coins"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "une paire formée (R)",
+        "face F: les coins ont une couleur opposée",
+        "le coin central face R a une couleur opposée à l'arrête de la face F"
+      ]
+    }]
+  },
+  {
+    "name": "F",
+    "category": "Swap One Set of Adjacent Corners",
+    "algo": "(R' U' F')(R U R' U')(R' F R2 U')(R' U' R U)(R' U R)",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "les coins aux extremités (F & R) ont la même couleur",
+        "le coin central face F a la même que la couleur de l'arrête de la face R",
+        "le coin central face R a la même que la couleur de l'arrête de la face F"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+
+  {
+    "name": "V",
+    "category": "Swap One Set of Diagonal Corners",
+    "algo": "(R' U R' U') y (R' F' R2 U') (R' U R' F) R F",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Y",
+    "category": "Swap One Set of Diagonal Corners",
+    "algo": "F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": [
+        "la couleur du coin face F est la même que la couleur de l'arrête face R",
+        "la couleur du coin face R est la même que la couleur de l'arrête face F"
+      ]
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Na",
+    "category": "Swap One Set of Diagonal Corners",
+    "algo": "(RUR'U)(RUR'F')(RUR'U')(R'FR2U') R' U2 (RU'R')",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Nb",
+    "category": "Swap One Set of Diagonal Corners",
+    "algo": "(R' U R U') (R' F' U' F) (R U R' F) R' F' (R U' R)",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+
+  {
+    "name": "Ga",
+    "category": "Double cycles",
+    "algo": "R2 U (R' U R' U') (R U' R2) D U' (R' U R D') [U]",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": [
+        "les coins aux extremités (F & R) ont la même couleur",
+        "le coin central face F a une couleur opposée à celle de l'arrête de la face R",
+        "le coin central face R a la même que la couleur de l'arrête de la face F"
+      ]
+    }]
+  },
+  {
+    "name": "Gb",
+    "category": "Double cycles",
+    "algo": "(F' U' F) (R2 u R' U) (R U' R u') R2'",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Gc",
+    "category": "Double cycles",
+    "algo": "R2 U' (R U' R U) (R' U R2 D') (U R U' R') D [U']",
+    "cases": [{
+      "rotation": "",
+      "comments": [
+        "les coins aux extremités (F & R) ont la même couleur",
+        "le coin central face F a une couleur opposée à celle de l'arrête de la face R",
+        "le coin central face R a la même que la couleur de l'arrête de la face F"
+      ]
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  },
+  {
+    "name": "Gd",
+    "category": "Double cycles",
+    "algo": "D' (R U R' U') D (R2 U' R U') (R' U R' U) R2 [U]",
+    "cases": [{
+      "rotation": "",
+      "comments": []
+    }, {
+      "rotation": "U",
+      "comments": []
+    }, {
+      "rotation": "U2",
+      "comments": []
+    }, {
+      "rotation": "U'",
+      "comments": []
+    }]
+  }
+]

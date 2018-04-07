@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PLL Recognition</title>
+  <meta property="og:title" content="PLL Recognition">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="ldez magic puzzle (rubik's)">
+  <meta property="og:description" content="PLL Recognition">
+  <meta name="description" content="PLL Recognition">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .headerlink {
+        color: rgba(0,0,0,.26);
+        text-decoration: none;
+    }
+
+    .wrap {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    .wrapper>div {
+      border: 2px solid rgb(233, 171, 88);
+      border-radius: 5px;
+      padding: 1em;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1em;
+      grid-auto-rows: minmax(100px, auto);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrap">
+    
+  <article>
+    <header>
+      <h2 id="Ua" title="Permutations of Edges Only">PLL Ua <a class="headerlink" href="#Ua" title="Permanent link">¶</a></h2>
+      <pre>M'2 U M U2 M' U M'2</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=M'2UMU2M'UM'2" alt="M'2UMU2M'UM'2">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R forme une seule et unique ligne face R</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UM'2UMU2M'UM'2" alt="UM'2UMU2M'UM'2">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R forme une seule et unique ligne face R</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2M'2UMU2M'UM'2" alt="U2M'2UMU2M'UM'2">
+          
+          <details>
+            <ul>
+              <li>ligne déjà formée en face F (gauche)</li><li>les coins de la face R (droite) ont la même couleur</li><li>l'arrête (R) a une couleur adjacente à celle des coins</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'M'2UMU2M'UM'2" alt="U'M'2UMU2M'UM'2">
+          
+          <details>
+            <ul>
+              <li>ligne déjà formée en face R (droite)</li><li>les coins de la face F (gauche) ont la même couleur</li><li>l'arrête (F) a une couleur opposée à celle des coins</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Ub" title="Permutations of Edges Only">PLL Ub <a class="headerlink" href="#Ub" title="Permanent link">¶</a></h2>
+      <pre>M'2 U' M U2 M' U' M'2</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=M'2U'MU2M'U'M'2" alt="M'2U'MU2M'U'M'2">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R forme une seule et unique ligne face F</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UM'2U'MU2M'U'M'2" alt="UM'2U'MU2M'U'M'2">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R forme une seule et unique ligne face F</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2M'2U'MU2M'U'M'2" alt="U2M'2U'MU2M'U'M'2">
+          
+          <details>
+            <ul>
+              <li>ligne déjà formée en face F (gauche)</li><li>les coins de la face R (droite) ont la même couleur</li><li>l'arrête (R) a une couleur opposée à celle des coins</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'M'2U'MU2M'U'M'2" alt="U'M'2U'MU2M'U'M'2">
+          
+          <details>
+            <ul>
+              <li>ligne déjà formée en face R (droite)</li><li>les coins de la face F (gauche) ont la même couleur</li><li>l'arrête (F) a une couleur adjacente à celle des coins</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Z" title="Permutations of Edges Only">PLL Z <a class="headerlink" href="#Z" title="Permanent link">¶</a></h2>
+      <pre>M' U (M'2 U) (M'2 U) M' U2 M'2 U'</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=M'UM'2UM'2UM'U2M'2U'" alt="M'UM'2UM'2UM'U2M'2U'">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R ne forme aucune ligne</li><li>les arrêtes ont des couleurs adjacentes aux coins de la même ligne</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UM'UM'2UM'2UM'U2M'2U'" alt="UM'UM'2UM'2UM'U2M'2U'">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R forme les 2 lignes</li><li>les coins (R) ont la même couleur</li><li>les coins (F) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2M'UM'2UM'2UM'U2M'2U'" alt="U2M'UM'2UM'2UM'U2M'2U'">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R ne forme aucune ligne</li><li>les arrêtes ont des couleurs adjacentes aux coins de la même ligne</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'M'UM'2UM'2UM'U2M'2U'" alt="U'M'UM'2UM'2UM'U2M'2U'">
+          
+          <details>
+            <ul>
+              <li>la permutation des arrêtes F et R forme les 2 lignes</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="H" title="Permutations of Edges Only">PLL H <a class="headerlink" href="#H" title="Permanent link">¶</a></h2>
+      <pre>M'2 U M'2 U2 M'2 U M'2</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=M'2UM'2U2M'2UM'2" alt="M'2UM'2U2M'2UM'2">
+          
+          <details>
+            <ul>
+              <li>les arrêtes ont des couleurs opposée aux coins de la même ligne</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li><li>la permutation des arrêtes F et R ne forme aucune ligne</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UM'2UM'2U2M'2UM'2" alt="UM'2UM'2U2M'2UM'2">
+          
+          <details>
+            <ul>
+              <li>les arrêtes ont des couleurs opposée aux coins de la même ligne</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li><li>la permutation des arrêtes F et R ne forme aucune ligne</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2M'2UM'2U2M'2UM'2" alt="U2M'2UM'2U2M'2UM'2">
+          
+          <details>
+            <ul>
+              <li>les arrêtes ont des couleurs opposée aux coins de la même ligne</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li><li>la permutation des arrêtes F et R ne forme aucune ligne</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'M'2UM'2U2M'2UM'2" alt="U'M'2UM'2U2M'2UM'2">
+          
+          <details>
+            <ul>
+              <li>les arrêtes ont des couleurs opposée aux coins de la même ligne</li><li>les coins (F) ont la même couleur</li><li>les coins (R) ont la même couleur</li><li>la permutation des arrêtes F et R ne forme aucune ligne</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Aa" title="Permutations of Corners Only">PLL Aa <a class="headerlink" href="#Aa" title="Permanent link">¶</a></h2>
+      <pre>x (R' U R') D2 (R U' R') D2 R2 x'</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=xR'UR'D2RU'R'D2R2x'" alt="xR'UR'D2RU'R'D2R2x'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UxR'UR'D2RU'R'D2R2x'" alt="UxR'UR'D2RU'R'D2R2x'">
+          
+          <details>
+            <ul>
+              <li>un bloc 2x2 formé</li><li>les coins des 2 extermités (F & R) ont la même couleur</li><li>couleurs opposées sur la droite</li><li>couleurs adjacentes sur la gauche</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2xR'UR'D2RU'R'D2R2x'" alt="U2xR'UR'D2RU'R'D2R2x'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'xR'UR'D2RU'R'D2R2x'" alt="U'xR'UR'D2RU'R'D2R2x'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Ab" title="Permutations of Corners Only">PLL Ab <a class="headerlink" href="#Ab" title="Permanent link">¶</a></h2>
+      <pre>x R2' D2 (R U R') D2 (R U' R) x'</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=xR2'D2RUR'D2RU'Rx'" alt="xR2'D2RUR'D2RU'Rx'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UxR2'D2RUR'D2RU'Rx'" alt="UxR2'D2RUR'D2RU'Rx'">
+          
+          <details>
+            <ul>
+              <li>un bloc 2x2 formé</li><li>les coins des 2 extermités (F & R) ont la même couleur</li><li>couleurs opposées sur la gauche</li><li>couleurs adjacentes sur la droite</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2xR2'D2RUR'D2RU'Rx'" alt="U2xR2'D2RUR'D2RU'Rx'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'xR2'D2RUR'D2RU'Rx'" alt="U'xR2'D2RUR'D2RU'Rx'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="E" title="Permutations of Corners Only">PLL E <a class="headerlink" href="#E" title="Permanent link">¶</a></h2>
+      <pre>x' (R U' R' D) (R U R' D') (R U R' D) (R U' R' D') x</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=x'RU'R'DRUR'D'RUR'DRU'R'D'x" alt="x'RU'R'DRUR'D'RUR'DRU'R'D'x">
+          
+          <details>
+            <ul>
+              <li>aucune paire</li><li>le coin central face F a la même couleur que l'arrête (R)</li><li>l'arrête (F) a une couleur opposée à celle du coin central face R</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=Ux'RU'R'DRUR'D'RUR'DRU'R'D'x" alt="Ux'RU'R'DRUR'D'RUR'DRU'R'D'x">
+          
+          <details>
+            <ul>
+              <li>aucune paire</li><li>le coin central face R a la même couleur que l'arrête (F)</li><li>l'arrête (R) a une couleur opposée à celle du coin central face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2x'RU'R'DRUR'D'RUR'DRU'R'D'x" alt="U2x'RU'R'DRUR'D'RUR'DRU'R'D'x">
+          
+          <details>
+            <ul>
+              <li>aucune paire</li><li>le coin central face F a la même couleur que l'arrête (R)</li><li>l'arrête (F) a une couleur opposée à celle du coin central face R</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'x'RU'R'DRUR'D'RUR'DRU'R'D'x" alt="U'x'RU'R'DRUR'D'RUR'DRU'R'D'x">
+          
+          <details>
+            <ul>
+              <li>aucune paire</li><li>le coin central (F+R) a la même couleur que l'arrête (F)</li><li>l'arrête (R) a une couleur opposée à celle du coin central face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Ra" title="Swap One Set of Adjacent Corners">PLL Ra <a class="headerlink" href="#Ra" title="Permanent link">¶</a></h2>
+      <pre>(R U' R' U') (R U R D) (R' U' R D') (R' U2 R') [U']</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=RU'R'U'RURDR'U'RD'R'U2R'U'" alt="RU'R'U'RURDR'U'RD'R'U2R'U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=URU'R'U'RURDR'U'RD'R'U2R'U'" alt="URU'R'U'RURDR'U'RD'R'U2R'U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2RU'R'U'RURDR'U'RD'R'U2R'U'" alt="U2RU'R'U'RURDR'U'RD'R'U2R'U'">
+          
+          <details>
+            <ul>
+              <li>après la permutation des 2 arrêtes, ligne formée face R</li><li>après la permutation des 2 arrêtes, la couleur les arrêtes est identique au coin central</li><li>les coins face R ont la même couleur</li><li>les coins face F n'ont pas la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'RU'R'U'RURDR'U'RD'R'U2R'U'" alt="U'RU'R'U'RURDR'U'RD'R'U2R'U'">
+          
+          <details>
+            <ul>
+              <li>les coins aux extremités (F & R) ont la même couleur</li><li>le coin central face F a une couleur adjacente à celle de l'arrête de la face R</li><li>le coin central face R a la même que la couleur de l'arrête de la face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Rb" title="Swap One Set of Adjacent Corners">PLL Rb <a class="headerlink" href="#Rb" title="Permanent link">¶</a></h2>
+      <pre>(R' U2 R U2') R' F (R U R' U') R' F' R2 [U']</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R'U2RU2'R'FRUR'U'R'F'R2U'" alt="R'U2RU2'R'FRUR'U'R'F'R2U'">
+          
+          <details>
+            <ul>
+              <li>après la permutation des 2 arrêtes, ligne formée face F</li><li>après la permutation des 2 arrêtes, la couleur les arrêtes est identique au coin central</li><li>les coins face F ont la même couleur</li><li>les coins face R n'ont pas la même couleur</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR'U2RU2'R'FRUR'U'R'F'R2U'" alt="UR'U2RU2'R'FRUR'U'R'F'R2U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'U2RU2'R'FRUR'U'R'F'R2U'" alt="U2R'U2RU2'R'FRUR'U'R'F'R2U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'U2RU2'R'FRUR'U'R'F'R2U'" alt="U'R'U2RU2'R'FRUR'U'R'F'R2U'">
+          
+          <details>
+            <ul>
+              <li>les coins aux extremités (F & R) ont la même couleur</li><li>le coin central face R a une couleur adjacente à celle de l'arrête de la face F</li><li>le coin central face F a la même que la couleur de l'arrête de la face R</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Ja" title="Swap One Set of Adjacent Corners">PLL Ja <a class="headerlink" href="#Ja" title="Permanent link">¶</a></h2>
+      <pre>(R' U L' U2) (R U' R' U2 R) L [U']</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R'UL'U2RU'R'U2RLU'" alt="R'UL'U2RU'R'U2RLU'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR'UL'U2RU'R'U2RLU'" alt="UR'UL'U2RU'R'U2RLU'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'UL'U2RU'R'U2RLU'" alt="U2R'UL'U2RU'R'U2RLU'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'UL'U2RU'R'U2RLU'" alt="U'R'UL'U2RU'R'U2RLU'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Jb" title="Swap One Set of Adjacent Corners">PLL Jb <a class="headerlink" href="#Jb" title="Permanent link">¶</a></h2>
+      <pre>(R U R' F') (R U R' U') R' F R2 U' R' [U']</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=RUR'F'RUR'U'R'FR2U'R'U'" alt="RUR'F'RUR'U'R'FR2U'R'U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=URUR'F'RUR'U'R'FR2U'R'U'" alt="URUR'F'RUR'U'R'FR2U'R'U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2RUR'F'RUR'U'R'FR2U'R'U'" alt="U2RUR'F'RUR'U'R'FR2U'R'U'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'RUR'F'RUR'U'R'FR2U'R'U'" alt="U'RUR'F'RUR'U'R'FR2U'R'U'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="T" title="Swap One Set of Adjacent Corners">PLL T <a class="headerlink" href="#T" title="Permanent link">¶</a></h2>
+      <pre>(R U R' U') (R' F R2 U') R' U' (R U R' F')</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=RUR'U'R'FR2U'R'U'RUR'F'" alt="RUR'U'R'FR2U'R'U'RUR'F'">
+          
+          <details>
+            <ul>
+              <li>une paire formée (F)</li><li>face R: les coins ont une couleur opposée</li><li>le coin central face F a une couleur opposée à l'arrête de la face R</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=URUR'U'R'FR2U'R'U'RUR'F'" alt="URUR'U'R'FR2U'R'U'RUR'F'">
+          
+          <details>
+            <ul>
+              <li>une paire formée (F)</li><li>face R: les coins ont la même couleur</li><li>face R: l'arrête à une couleur opposée aux coins</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2RUR'U'R'FR2U'R'U'RUR'F'" alt="U2RUR'U'R'FR2U'R'U'RUR'F'">
+          
+          <details>
+            <ul>
+              <li>une paire formée (R)</li><li>face F: les coins ont la même couleur</li><li>face F: l'arrête à une couleur opposée aux coins</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'RUR'U'R'FR2U'R'U'RUR'F'" alt="U'RUR'U'R'FR2U'R'U'RUR'F'">
+          
+          <details>
+            <ul>
+              <li>une paire formée (R)</li><li>face F: les coins ont une couleur opposée</li><li>le coin central face R a une couleur opposée à l'arrête de la face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="F" title="Swap One Set of Adjacent Corners">PLL F <a class="headerlink" href="#F" title="Permanent link">¶</a></h2>
+      <pre>(R' U' F')(R U R' U')(R' F R2 U')(R' U' R U)(R' U R)</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R'U'F'RUR'U'R'FR2U'R'U'RUR'UR" alt="R'U'F'RUR'U'R'FR2U'R'U'RUR'UR">
+          
+          <details>
+            <ul>
+              <li>les coins aux extremités (F & R) ont la même couleur</li><li>le coin central face F a la même que la couleur de l'arrête de la face R</li><li>le coin central face R a la même que la couleur de l'arrête de la face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR'U'F'RUR'U'R'FR2U'R'U'RUR'UR" alt="UR'U'F'RUR'U'R'FR2U'R'U'RUR'UR">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'U'F'RUR'U'R'FR2U'R'U'RUR'UR" alt="U2R'U'F'RUR'U'R'FR2U'R'U'RUR'UR">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'U'F'RUR'U'R'FR2U'R'U'RUR'UR" alt="U'R'U'F'RUR'U'R'FR2U'R'U'RUR'UR">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="V" title="Swap One Set of Diagonal Corners">PLL V <a class="headerlink" href="#V" title="Permanent link">¶</a></h2>
+      <pre>(R' U R' U') y (R' F' R2 U') (R' U R' F) R F</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R'UR'U'yR'F'R2U'R'UR'FRF" alt="R'UR'U'yR'F'R2U'R'UR'FRF">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR'UR'U'yR'F'R2U'R'UR'FRF" alt="UR'UR'U'yR'F'R2U'R'UR'FRF">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'UR'U'yR'F'R2U'R'UR'FRF" alt="U2R'UR'U'yR'F'R2U'R'UR'FRF">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'UR'U'yR'F'R2U'R'UR'FRF" alt="U'R'UR'U'yR'F'R2U'R'UR'FRF">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Y" title="Swap One Set of Diagonal Corners">PLL Y <a class="headerlink" href="#Y" title="Permanent link">¶</a></h2>
+      <pre>F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=FRU'R'U'RUR'F'RUR'U'R'FRF'" alt="FRU'R'U'RUR'F'RUR'U'R'FRF'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UFRU'R'U'RUR'F'RUR'U'R'FRF'" alt="UFRU'R'U'RUR'F'RUR'U'R'FRF'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2FRU'R'U'RUR'F'RUR'U'R'FRF'" alt="U2FRU'R'U'RUR'F'RUR'U'R'FRF'">
+          
+          <details>
+            <ul>
+              <li>la couleur du coin face F est la même que la couleur de l'arrête face R</li><li>la couleur du coin face R est la même que la couleur de l'arrête face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'FRU'R'U'RUR'F'RUR'U'R'FRF'" alt="U'FRU'R'U'RUR'F'RUR'U'R'FRF'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Na" title="Swap One Set of Diagonal Corners">PLL Na <a class="headerlink" href="#Na" title="Permanent link">¶</a></h2>
+      <pre>(RUR'U)(RUR'F')(RUR'U')(R'FR2U') R' U2 (RU'R')</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=RUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'" alt="RUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=URUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'" alt="URUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2RUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'" alt="U2RUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'RUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'" alt="U'RUR'URUR'F'RUR'U'R'FR2U'R'U2RU'R'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Nb" title="Swap One Set of Diagonal Corners">PLL Nb <a class="headerlink" href="#Nb" title="Permanent link">¶</a></h2>
+      <pre>(R' U R U') (R' F' U' F) (R U R' F) R' F' (R U' R)</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R'URU'R'F'U'FRUR'FR'F'RU'R" alt="R'URU'R'F'U'FRUR'FR'F'RU'R">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR'URU'R'F'U'FRUR'FR'F'RU'R" alt="UR'URU'R'F'U'FRUR'FR'F'RU'R">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'URU'R'F'U'FRUR'FR'F'RU'R" alt="U2R'URU'R'F'U'FRUR'FR'F'RU'R">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'URU'R'F'U'FRUR'FR'F'RU'R" alt="U'R'URU'R'F'U'FRUR'FR'F'RU'R">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Ga" title="Double cycles">PLL Ga <a class="headerlink" href="#Ga" title="Permanent link">¶</a></h2>
+      <pre>R2 U (R' U R' U') (R U' R2) D U' (R' U R D') [U]</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R2UR'UR'U'RU'R2DU'R'URD'U" alt="R2UR'UR'U'RU'R2DU'R'URD'U">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR2UR'UR'U'RU'R2DU'R'URD'U" alt="UR2UR'UR'U'RU'R2DU'R'URD'U">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R2UR'UR'U'RU'R2DU'R'URD'U" alt="U2R2UR'UR'U'RU'R2DU'R'URD'U">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R2UR'UR'U'RU'R2DU'R'URD'U" alt="U'R2UR'UR'U'RU'R2DU'R'URD'U">
+          
+          <details>
+            <ul>
+              <li>les coins aux extremités (F & R) ont la même couleur</li><li>le coin central face F a une couleur opposée à celle de l'arrête de la face R</li><li>le coin central face R a la même que la couleur de l'arrête de la face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Gb" title="Double cycles">PLL Gb <a class="headerlink" href="#Gb" title="Permanent link">¶</a></h2>
+      <pre>(F' U' F) (R2 u R' U) (R U' R u') R2'</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=F'U'FR2uR'URU'Ru'R2'" alt="F'U'FR2uR'URU'Ru'R2'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UF'U'FR2uR'URU'Ru'R2'" alt="UF'U'FR2uR'URU'Ru'R2'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2F'U'FR2uR'URU'Ru'R2'" alt="U2F'U'FR2uR'URU'Ru'R2'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'F'U'FR2uR'URU'Ru'R2'" alt="U'F'U'FR2uR'URU'Ru'R2'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Gc" title="Double cycles">PLL Gc <a class="headerlink" href="#Gc" title="Permanent link">¶</a></h2>
+      <pre>R2 U' (R U' R U) (R' U R2 D') (U R U' R') D [U']</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R2U'RU'RUR'UR2D'URU'R'DU'" alt="R2U'RU'RUR'UR2D'URU'R'DU'">
+          
+          <details>
+            <ul>
+              <li>les coins aux extremités (F & R) ont la même couleur</li><li>le coin central face F a une couleur opposée à celle de l'arrête de la face R</li><li>le coin central face R a la même que la couleur de l'arrête de la face F</li>
+            </ul>
+          </details>
+
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR2U'RU'RUR'UR2D'URU'R'DU'" alt="UR2U'RU'RUR'UR2D'URU'R'DU'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R2U'RU'RUR'UR2D'URU'R'DU'" alt="U2R2U'RU'RUR'UR2D'URU'R'DU'">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R2U'RU'RUR'UR2D'URU'R'DU'" alt="U'R2U'RU'RUR'UR2D'URU'R'DU'">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  <article>
+    <header>
+      <h2 id="Gd" title="Double cycles">PLL Gd <a class="headerlink" href="#Gd" title="Permanent link">¶</a></h2>
+      <pre>D' (R U R' U') D (R2 U' R U') (R' U R' U) R2 [U]</pre>
+    </header>
+    
+      <section class="wrapper">
+        
+        <section>
+          <h3>Case </h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=D'RUR'U'DR2U'RU'R'UR'UR2U" alt="D'RUR'U'DR2U'RU'R'UR'UR2U">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UD'RUR'U'DR2U'RU'R'UR'UR2U" alt="UD'RUR'U'DR2U'RU'R'UR'UR2U">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U2</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2D'RUR'U'DR2U'RU'R'UR'UR2U" alt="U2D'RUR'U'DR2U'RU'R'UR'UR2U">
+          <span>NA</span>
+        </section>
+
+        <section>
+          <h3>Case U'</h3>
+          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'D'RUR'U'DR2U'RU'R'UR'UR2U" alt="U'D'RUR'U'DR2U'RU'R'UR'UR2U">
+          <span>NA</span>
+        </section>
+
+      </section>
+  
+  </article>
+
+  </main>
+
+</body>
+
+</html>
