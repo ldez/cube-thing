@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PLL Recognition</title>
+  <meta property="og:title" content="PLL Recognition">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="ldez magic puzzle (rubik's)">
+  <meta property="og:description" content="PLL Recognition">
+  <meta name="description" content="PLL Recognition">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .wrap {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    .wrapper>div {
+      border: 2px solid lightblue;
+      border-radius: 5px;
+      padding: 1em;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .solution {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="scramble wrap wrapper">
+    <div id="question" class="question">
+      <button id="check">Check</button>
+    </div>
+    <div id="solution" class="solution">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const extraMoves = ["", "U", "U2", "U'"];
+
+    fetch('pll-recognition.json')
+      .then(response => response.json())
+      .then(allData => {
+        const pll = shuffle(allData)[0];
+        const angle = shuffle(pll.cases)[0];
+        const extra = shuffle(extraMoves)[0];
+
+        let scramble = angle.rotation + pll.algo.replace(/\s|\)|\(|\[|\]/g, '') + extra;
+        scramble = scramble.replace(/'/g, '%27');
+
+
+        const img = document.createElement('img');
+        console.log(`PLL ${pll.name}, case ${angle.rotation} | ${extra} |: ${pll.algo}`);
+        img.src = `http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(scramble)}`;
+
+        const question = document.getElementById('question')
+        question.appendChild(img);
+
+        const check = document.getElementById('check');
+        check.addEventListener('click', evt => {
+          solution.classList.remove('solution');
+        })
+
+        // Solution
+
+        const name = document.createElement('h2');
+        name.innerHTML = pll.name;
+
+        const imgSolution = document.createElement('img');
+        imgSolution.src = `http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&case=${encodeURIComponent(scramble)}`;
+
+
+        const more = document.createElement('div');
+        more.innerHTML = renderComments(angle);
+
+        const solution = document.getElementById('solution')
+        solution.appendChild(name);
+        solution.appendChild(imgSolution);
+        solution.appendChild(more);
+
+      });
+
+    function renderComments(angle) {
+      if (angle.comments.length === 0) {
+        return `<span>NA</span>`;
+      }
+
+      return `
+        <details>
+          <ul>
+            ${angle.comments.map(comment => `<li>${comment}</li>`).join('')}
+          </ul>
+        </details>
+      `;
+    }
+
+    function shuffle(source) {
+      // Deep clone
+      let array = JSON.parse(JSON.stringify(source));
+
+      let currentIndex = array.length;
+      let temporaryValue;
+      let randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+  </script>
+
+</body>
+
+</html>
