@@ -363,13 +363,15 @@ Not yet available.
 
 ![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'UL'U2RU'R'U2RLU')
 
-Not yet available.
+- 2 paires formées à gauche des faces
+- le coin à droite face R a la même que la couleur de la paire de la face F
 
 ### Case U'
 
 ![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'UL'U2RU'R'U2RLU')
 
-Not yet available.
+- 2 paires formées à gauche des faces
+- le coin à droite face R a la même que la couleur de la paire de la face F
 
 
 ## Jb
@@ -579,25 +581,29 @@ Not yet available.
 
 ![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=R'URU'R'F'U'FRUR'FR'F'RU'R)
 
-Not yet available.
+- 2 paires formées à gauche des faces
+- le coin à droite face R n'a pas la même que la couleur de la paire de la face F
 
 ### Case U
 
 ![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=UR'URU'R'F'U'FRUR'FR'F'RU'R)
 
-Not yet available.
+- 2 paires formées à gauche des faces
+- le coin à droite face R n'a pas la même que la couleur de la paire de la face F
 
 ### Case U2
 
 ![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U2R'URU'R'F'U'FRUR'FR'F'RU'R)
 
-Not yet available.
+- 2 paires formées à gauche des faces
+- le coin à droite face R n'a pas la même que la couleur de la paire de la face F
 
 ### Case U'
 
 ![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=U'R'URU'R'F'U'FRUR'FR'F'RU'R)
 
-Not yet available.
+- 2 paires formées à gauche des faces
+- le coin à droite face R n'a pas la même que la couleur de la paire de la face F
 
 
 ## Ga
