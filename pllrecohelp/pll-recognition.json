@@ -289,10 +289,16 @@
       "comments": []
     }, {
       "rotation": "U2",
-      "comments": []
+        "comments": [
+        "2 paires formées à gauche des faces",
+        "le coin à droite face R a la même que la couleur de la paire de la face F"
+      ]
     }, {
       "rotation": "U'",
-      "comments": []
+        "comments": [
+        "2 paires formées à gauche des faces",
+        "le coin à droite face R a la même que la couleur de la paire de la face F"
+      ]
     }]
   },
   {
@@ -433,19 +439,30 @@
     "algo": "(R' U R U') (R' F' U' F) (R U R' F) R' F' (R U' R)",
     "cases": [{
       "rotation": "",
-      "comments": []
+      "comments": [
+        "2 paires formées à gauche des faces",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+      ]
     }, {
       "rotation": "U",
-      "comments": []
+      "comments": [
+        "2 paires formées à gauche des faces",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+      ]
     }, {
       "rotation": "U2",
-      "comments": []
+      "comments": [
+        "2 paires formées à gauche des faces",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+      ]
     }, {
       "rotation": "U'",
-      "comments": []
+      "comments": [
+        "2 paires formées à gauche des faces",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+      ]
     }]
   },
-
   {
     "name": "Ga",
     "category": "Double cycles",
