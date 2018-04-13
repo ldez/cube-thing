@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "Ua",
     "algo": "M'2 U M U2 M' U M'2",
     "category": "Permutations of Edges Only",
@@ -289,10 +288,16 @@
       "comments": []
     }, {
       "rotation": "U2",
-      "comments": []
+      "comments": [
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R a la même que la couleur de la paire de la face F"
+      ]
     }, {
       "rotation": "U'",
-      "comments": []
+      "comments": [
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R a la même que la couleur de la paire de la face F"
+      ]
     }]
   },
   {
@@ -433,19 +438,34 @@
     "algo": "(R' U R U') (R' F' U' F) (R U R' F) R' F' (R U' R)",
     "cases": [{
       "rotation": "",
-      "comments": []
+      "comments": [
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
+      ]
     }, {
       "rotation": "U",
-      "comments": []
+      "comments": [
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
+      ]
     }, {
       "rotation": "U2",
-      "comments": []
+      "comments": [
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
+      ]
     }, {
       "rotation": "U'",
-      "comments": []
+      "comments": [
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
+      ]
     }]
   },
-
   {
     "name": "Ga",
     "category": "Double cycles",
