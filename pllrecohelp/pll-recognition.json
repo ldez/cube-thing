@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "Ua",
     "algo": "M'2 U M U2 M' U M'2",
     "category": "Permutations of Edges Only",
@@ -289,14 +288,14 @@
       "comments": []
     }, {
       "rotation": "U2",
-        "comments": [
-        "2 paires formées à gauche des faces",
+      "comments": [
+        "1 paire formée à gauche de chaque face",
         "le coin à droite face R a la même que la couleur de la paire de la face F"
       ]
     }, {
       "rotation": "U'",
-        "comments": [
-        "2 paires formées à gauche des faces",
+      "comments": [
+        "1 paire formée à gauche de chaque face",
         "le coin à droite face R a la même que la couleur de la paire de la face F"
       ]
     }]
@@ -440,26 +439,30 @@
     "cases": [{
       "rotation": "",
       "comments": [
-        "2 paires formées à gauche des faces",
-        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
       ]
     }, {
       "rotation": "U",
       "comments": [
-        "2 paires formées à gauche des faces",
-        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
       ]
     }, {
       "rotation": "U2",
       "comments": [
-        "2 paires formées à gauche des faces",
-        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
       ]
     }, {
       "rotation": "U'",
       "comments": [
-        "2 paires formées à gauche des faces",
-        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F"
+        "1 paire formée à gauche de chaque face",
+        "le coin à droite face R n'a pas la même que la couleur de la paire de la face F",
+        "les couleurs sur chaque face sont des couleurs opposées"
       ]
     }]
   },
