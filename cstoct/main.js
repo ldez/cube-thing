@@ -110,9 +110,9 @@
 
   function getTime(resoData) {
     if (resoData[0] === -1) {
-      return Math.round(resoData[1] / 10)
+      return Math.floor(resoData[1] / 10)
     }
-    return Math.round((resoData[1] + resoData[0]) / 10)
+    return Math.floor((resoData[1] + resoData[0]) / 10)
   }
 
   // cstimer:
