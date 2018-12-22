@@ -54,7 +54,7 @@
 
         const sessName = document.createElement('span');
         sessName.classList.add('session-name');
-        sessName.innerHTML = ses.name[0].toUpperCase() + ses.name.substr(1, ses.name.length) +":";
+        sessName.innerHTML = ses.name[0].toUpperCase() + ses.name.substr(1, ses.name.length) + ":";
 
         const section = document.createElement('div');
         section.appendChild(sessName);
@@ -70,31 +70,85 @@
   function convert(allData, limit) {
     const allSessions = [];
 
+    const sessionData = JSON.parse(JSON.parse(allData.properties).sessionData);
+
+
+    let sessionIndex = 0
     for (let prop in allData) {
 
-      let dis2mem = [];
-      let dis2scr = [];
-      let dis2sol = [];
-      let dis2tip = [];
+      let dismem = [];
+      let disscr = [];
+      let dissol = [];
+      let distip = [];
 
       if (prop !== 'properties') {
+        sessionIndex++
         const rawSession = allData[prop]
 
         if (rawSession !== '[]') {
           for (let reso of JSON.parse(rawSession)) {
             if (reso[0][1] < limit) {
-              dis2mem.push(0);
-              dis2sol.push(getTime(reso[0])); // time
-              dis2scr.push(reso[1]); // scramble
-              dis2tip.push(convertExtra(reso[0][0])); // extra (+2/DNF)
+              dismem.push(0);
+              dissol.push(getTime(reso[0])); // time
+              disscr.push(reso[1]); // scramble
+              distip.push(convertExtra(reso[0][0])); // extra (+2/DNF)
             }
           }
 
-          let solves = {
-            dis2mem: JSON.stringify(dis2mem),
-            dis2scr: JSON.stringify(dis2scr),
-            dis2sol: JSON.stringify(dis2sol),
-            dis2tip: JSON.stringify(dis2tip),
+          let rawSolves = {
+            dismem: JSON.stringify(dismem),
+            disscr: JSON.stringify(disscr),
+            dissol: JSON.stringify(dissol),
+            distip: JSON.stringify(distip),
+          }
+
+          const scrType = sessionData['' + sessionIndex].scr;
+
+          let solves = {}
+          if (scrType.startsWith("222")) {
+            solves = {
+              dis1mem: rawSolves.dismem,
+              dis1scr: rawSolves.disscr,
+              dis1sol: rawSolves.dissol,
+              dis1tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("333")) {
+            solves = {
+              dis2mem: rawSolves.dismem,
+              dis2scr: rawSolves.disscr,
+              dis2sol: rawSolves.dissol,
+              dis2tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("444")) {
+            solves = {
+              dis3mem: rawSolves.dismem,
+              dis3scr: rawSolves.disscr,
+              dis3sol: rawSolves.dissol,
+              dis3tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("555")) {
+            solves = {
+              dis4mem: rawSolves.dismem,
+              dis4scr: rawSolves.disscr,
+              dis4sol: rawSolves.dissol,
+              dis4tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("666")) {
+            solves = {
+              dis5mem: rawSolves.dismem,
+              dis5scr: rawSolves.disscr,
+              dis5sol: rawSolves.dissol,
+              dis5tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("777")) {
+            solves = {
+              dis6mem: rawSolves.dismem,
+              dis6scr: rawSolves.disscr,
+              dis6sol: rawSolves.dissol,
+              dis6tip: rawSolves.distip,
+            }
+          } else {
+            solves = rawSolves;
           }
 
           allSessions.push({
