@@ -147,6 +147,22 @@
               dis6sol: rawSolves.dissol,
               dis6tip: rawSolves.distip,
             }
+          } else if (scrType.startsWith("mgmp")) {
+            // Megaminx
+            solves = {
+              dis13mem: rawSolves.dismem,
+              dis13scr: rawSolves.disscr,
+              dis13sol: rawSolves.dissol,
+              dis13tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("pyrso")) {
+            // Pyraminx
+            solves = {
+              dis10mem: rawSolves.dismem,
+              dis10scr: rawSolves.disscr,
+              dis10sol: rawSolves.dissol,
+              dis10tip: rawSolves.distip,
+            }
           } else {
             solves = rawSolves;
           }
