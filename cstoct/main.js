@@ -43,6 +43,8 @@
     return function(e) {
       const sessions = convert(JSON.parse(e.target.result), theLimit);
 
+      // const sessions = convert(JSON.parse(e.target.result), theLimit);
+
       const wrapper = document.createElement('div');
       wrapper.classList.add('wrapper');
 
@@ -66,8 +68,129 @@
     }
   }
 
+
   // Convert data from CSTimer to Cubing Time format.
   function convert(allData, limit) {
+    try {
+      return convertOldFormat(allData, limit);
+    } catch (error) {
+      return convertNewFormat(allData, limit);
+    }
+  }
+
+  // Convert data from CSTimer to Cubing Time format.
+  function convertNewFormat(allData, limit) {
+    const allSessions = [];
+
+    const sessionData = JSON.parse(allData.properties.sessionData);
+
+    let sessionIndex = 0
+    for (let prop in allData) {
+
+      let dismem = [];
+      let disscr = [];
+      let dissol = [];
+      let distip = [];
+
+      if (prop !== 'properties') {
+        sessionIndex++
+        const rawSession = allData[prop]
+
+        if (rawSession.length !== 0) {
+          for (let reso of rawSession) {
+            if (reso[0][1] < limit) {
+              dismem.push(0);
+              dissol.push(getTime(reso[0])); // time
+              disscr.push(reso[1]); // scramble
+              distip.push(convertExtra(reso[0][0])); // extra (+2/DNF)
+            }
+          }
+
+          let rawSolves = {
+            dismem: JSON.stringify(dismem),
+            disscr: JSON.stringify(disscr),
+            dissol: JSON.stringify(dissol),
+            distip: JSON.stringify(distip),
+          }
+
+          const scrType = sessionData['' + sessionIndex].scr;
+
+          let solves = {}
+          if (scrType.startsWith("222")) {
+            solves = {
+              dis1mem: rawSolves.dismem,
+              dis1scr: rawSolves.disscr,
+              dis1sol: rawSolves.dissol,
+              dis1tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("333")) {
+            solves = {
+              dis2mem: rawSolves.dismem,
+              dis2scr: rawSolves.disscr,
+              dis2sol: rawSolves.dissol,
+              dis2tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("444")) {
+            solves = {
+              dis3mem: rawSolves.dismem,
+              dis3scr: rawSolves.disscr,
+              dis3sol: rawSolves.dissol,
+              dis3tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("555")) {
+            solves = {
+              dis4mem: rawSolves.dismem,
+              dis4scr: rawSolves.disscr,
+              dis4sol: rawSolves.dissol,
+              dis4tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("666")) {
+            solves = {
+              dis5mem: rawSolves.dismem,
+              dis5scr: rawSolves.disscr,
+              dis5sol: rawSolves.dissol,
+              dis5tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("777")) {
+            solves = {
+              dis6mem: rawSolves.dismem,
+              dis6scr: rawSolves.disscr,
+              dis6sol: rawSolves.dissol,
+              dis6tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("mgmp")) {
+            // Megaminx
+            solves = {
+              dis13mem: rawSolves.dismem,
+              dis13scr: rawSolves.disscr,
+              dis13sol: rawSolves.dissol,
+              dis13tip: rawSolves.distip,
+            }
+          } else if (scrType.startsWith("pyrso")) {
+            // Pyraminx
+            solves = {
+              dis10mem: rawSolves.dismem,
+              dis10scr: rawSolves.disscr,
+              dis10sol: rawSolves.dissol,
+              dis10tip: rawSolves.distip,
+            }
+          } else {
+            solves = rawSolves;
+          }
+
+          allSessions.push({
+            name: prop,
+            data: JSON.stringify(solves, ' ', 2)
+          });
+        }
+      }
+    }
+
+    return allSessions;
+  }
+
+  // Convert data from CSTimer to Cubing Time format. (Old format)
+  function convertOldFormat(allData, limit) {
     const allSessions = [];
 
     const sessionData = JSON.parse(JSON.parse(allData.properties).sessionData);
