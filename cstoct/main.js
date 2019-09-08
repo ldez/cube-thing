@@ -113,52 +113,53 @@
             distip: JSON.stringify(distip),
           }
 
-          const scrType = sessionData['' + sessionIndex].scr;
+          const sess = sessionData['' + sessionIndex]
+          const scrType = sess.opt.scrType ? sess.opt.scrType : '333';
 
           let solves = {}
-          if (scrType.startsWith("222")) {
+          if (scrType.startsWith('222')) {
             solves = {
               dis1mem: rawSolves.dismem,
               dis1scr: rawSolves.disscr,
               dis1sol: rawSolves.dissol,
               dis1tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("333")) {
+          } else if (scrType.startsWith('333')) {
             solves = {
               dis2mem: rawSolves.dismem,
               dis2scr: rawSolves.disscr,
               dis2sol: rawSolves.dissol,
               dis2tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("444")) {
+          } else if (scrType.startsWith('444')) {
             solves = {
               dis3mem: rawSolves.dismem,
               dis3scr: rawSolves.disscr,
               dis3sol: rawSolves.dissol,
               dis3tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("555")) {
+          } else if (scrType.startsWith('555')) {
             solves = {
               dis4mem: rawSolves.dismem,
               dis4scr: rawSolves.disscr,
               dis4sol: rawSolves.dissol,
               dis4tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("666")) {
+          } else if (scrType.startsWith('666')) {
             solves = {
               dis5mem: rawSolves.dismem,
               dis5scr: rawSolves.disscr,
               dis5sol: rawSolves.dissol,
               dis5tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("777")) {
+          } else if (scrType.startsWith('777')) {
             solves = {
               dis6mem: rawSolves.dismem,
               dis6scr: rawSolves.disscr,
               dis6sol: rawSolves.dissol,
               dis6tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("mgmp")) {
+          } else if (scrType.startsWith('mgmp')) {
             // Megaminx
             solves = {
               dis13mem: rawSolves.dismem,
@@ -166,7 +167,7 @@
               dis13sol: rawSolves.dissol,
               dis13tip: rawSolves.distip,
             }
-          } else if (scrType.startsWith("pyrso")) {
+          } else if (scrType.startsWith('pyrso')) {
             // Pyraminx
             solves = {
               dis10mem: rawSolves.dismem,
