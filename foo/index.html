@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Foo</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+  <div id="quiz">
+
+    <quiz url="https://api.myjson.com/bins/ahn1p">
+
+      <div slot="intro" slot-scope="props">
+        This is my custom quiz header for {{props.title}}.
+      </div>
+
+      <div slot="results" slot-scope="props">
+        <h1>WOWOWOW!</h1>
+          You got {{props.correct}} right out of
+          {{props.length}} questions.
+        Your percentage is {{props.perc}}%.
+      </div>
+
+    </quiz>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

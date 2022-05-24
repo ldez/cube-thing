@@ -31,7 +31,7 @@ function renderCase(angle) {
   return `
 ### Case ${angle.rotation}
 
-![](http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(angle.solve)})
+![](http://cube.rider.biz/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(angle.solve)})
 
 ${renderComments(angle)}`;
 }

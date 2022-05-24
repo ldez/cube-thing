@@ -65,7 +65,7 @@
 
         const img = document.createElement('img');
         console.log(`PLL ${pll.name}, case ${angle.rotation} | ${extra} |: ${pll.algo}`);
-        img.src = `http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(scramble)}`;
+        img.src = `http://cube.rider.biz/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(scramble)}`;
 
         const question = document.getElementById('question')
         question.appendChild(img);
@@ -81,7 +81,7 @@
         name.innerHTML = pll.name;
 
         const imgSolution = document.createElement('img');
-        imgSolution.src = `http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&view=plan&case=${encodeURIComponent(scramble)}`;
+        imgSolution.src = `http://cube.rider.biz/visualcube.php?fmt=svg&size=150&view=plan&case=${encodeURIComponent(scramble)}`;
 
 
         const more = document.createElement('div');

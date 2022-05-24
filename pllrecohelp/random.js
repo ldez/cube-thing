@@ -12,7 +12,7 @@ let scramble = angle.rotation + pll.algo.replace(/\s|\)|\(|\[|\]/g, '') + extra
 scramble = scramble.replace(/'/g, '%27')
 
 console.log(`PLL ${pll.name}, case ${angle.rotation} | ${extra} |: ${pll.algo}`);
-console.log(`http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(scramble)}`)
+console.log(`http://cube.rider.biz/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(scramble)}`)
 
 function shuffle(source) {
   // Deep clone

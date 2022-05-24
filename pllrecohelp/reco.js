@@ -87,7 +87,7 @@ function renderCase(angle) {
   return `
         <section>
           <h3>Case ${angle.rotation}</h3>
-          <img src="http://cube.crider.co.uk/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(angle.solve)}" alt="${angle.solve}">
+          <img src="http://cube.rider.biz/visualcube.php?fmt=svg&size=150&pzl=3&stage=ll&case=${encodeURIComponent(angle.solve)}" alt="${angle.solve}">
           ${renderComments(angle)}
         </section>
 `;
